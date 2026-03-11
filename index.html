@@ -17,6 +17,7 @@
             height: 100vh;
             background-color: #ffffff;
             overflow-x: hidden;
+            margin: 15px;
         }
 
         body::before {
@@ -27,12 +28,14 @@
             width: 100%;
             height: 100%;
             z-index: -1;
-            background-image: url('imagens/velaris03.png');
+            background-image: url('imagens/background2.png');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
             opacity: 1.5;
         }
+
+
 
         h1 {
             font-family: 'Cinzel Decorative', cursive;
@@ -44,6 +47,7 @@
             padding: auto;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
             filter: drop-shadow(0 0 10px rgba(194, 163, 104, 0.5));
+
         }
 
         h2 {
@@ -58,43 +62,48 @@
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
         }
 
-
-
-
-        aside {
-            position: fixed;
-            left: 10%;
-            top: 50%;
-            transform: translateY(-50%);
-            display: block;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            font-family: "Poiret One", sans-serif;
-            font-size: 20px;
-            z-index: 10;
+        .page {
             background: rgba(0, 0, 0, 0.3);
             backdrop-filter: blur(5px);
             border-right: 1px solid rgba(194, 163, 104, 0.3);
-            border-radius: 0 15px 15px 0;
+            border-radius: 15px;
+            margin: 200px;
+            padding: auto;
+            box-shadow: #c2a368 0px 0px 40px, #c2a368 0px 0px 40px, #c2a368 0px 0px 40px;
+
         }
+
+
+            aside {
+                position: relative;
+                display: block;
+                margin: 0 200px 20px 200px;
+                padding: 20px;
+                font-family: "Poiret One", sans-serif;
+                font-size: 20px;
+                z-index: 10;
+                background: rgba(0, 0, 0, 0.3);
+                backdrop-filter: blur(5px);
+                border-right: 1px solid rgba(194, 163, 104, 0.3);
+                border-radius: 15px;
+                margin: 200px;
+                padding: auto;
+                box-shadow: #c2a368 0px 0px 40px, #c2a368 0px 0px 40px, #c2a368 0px 0px 40px;
+            }
+
 
         aside ul {
             display: flex;
-            flex-direction: column;
-            list-style: none;
-            padding: 25px;
-            gap: 30px;
-            display: flex;
+            flex-direction: row;
+            justify-content: center;
             list-style: none;
             padding: 0;
-            gap: 20px;
-            text-decoration: none;
-            color: inherit;
-            
+            margin: 0;
+            gap: 40px;
         }
 
-      
+
+
 
         aside a {
             text-decoration: none;
@@ -106,29 +115,89 @@
         aside a:hover {
             color: #c2a368;
         }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: 40px 0 0 40px;
+            margin-top: 50px;
+            width: 100%;
+            gap: 20px;
+            border-right: 1px solid rgba(194, 163, 104, 0.3);
+        }
+
+        .container img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            margin: 50px 30px;
+
+        }
+
+        h2 {
+            font-family: "Poiret One", sans-serif;
+            color: #f0e6d2;
+            font-size: 30px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+            font: medium;
+            align-items: center;
+        }
+
+        .mapa {
+            width: 80%;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            margin: 50px auto;
+            align-items: center;
+        }
     </style>
 
 </head>
 
 <body>
+
     <header>
 
         <nav>
             <h1>Acotar</h1>
             <h2>" to the stars who listen—and the dreams that are answered... "</h2>
-
+            <aside>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="personagens.html">Personagens</a></li>
+                    <li><a href="livros.html">Livros</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </aside>
         </nav>
     </header>
-    <aside>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="personagens.html">Personagens</a></li>
-            <li><a href="livros.html">Livros</a></li>
-            <li><a href="contato.html">Contato</a></li>
-        </ul>
 
 
-    </aside>
+    <section class="page">
+
+        <div class="title">
+            <h2>Bem-vindo ao mundo de Prythian!</h2>
+            <p>Explore os reinos encantados, conheça os personagens fascinantes e mergulhe nas histórias épicas de "A
+                Court of Thorns and Roses".</p>
+        </div>
+
+        <div class="container">
+            <img class="mapa" src="imagens/prythian.png" alt="Mapa de prythian">
+
+        </div>
+
+
+    </section>
+
+
+
 
     </ul>
 
